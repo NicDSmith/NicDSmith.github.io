@@ -94,8 +94,8 @@
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" src="bigplaceholder.png" alt="Generic placeholder image">
         </div>
       </div>
-         <hr class="featurette-divider">
-       <!-- /END THE FEATURETTES -->
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
@@ -106,32 +106,32 @@
 
     </div><!-- /.container -->
 
-  
+    
 
 
 
 
 
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://code.jquery.com/jquery.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-      <script type='text/javascript'>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type='text/javascript'>
 
-      $(document).ready(function() {
+    $(document).ready(function() {
 
-        var jumboHeight = $('.jumbotron').outerHeight();
-        function parallax(){
-          var scrolled = $(window).scrollTop();
-          $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-        }
+      var jumboHeight = $('.jumbotron').outerHeight();
+      function parallax(){
+        var scrolled = $(window).scrollTop();
+        $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+      }
 
-        $(window).scroll(function(e){
-          parallax();
-        });
-
+      $(window).scroll(function(e){
+        parallax();
       });
 
-      </script>
-    </body>
+    });
+
+    </script>
+  </body>
