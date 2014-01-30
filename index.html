@@ -1,4 +1,123 @@
-<body>
-<h1>Under construction</h1>
-</body>
-</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nic Smith</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css">
+      .bg {
+        background: url('/Users/nic/Development/Personal/Nerdest.github.io/jumbo.jpg') no-repeat center center;
+        position: fixed;
+        width: 100%;
+        height: 350px; /*same height as jumbotron */
+        top:0;
+        left:0;
+        z-index: -1;
+      }
+
+      .jumbotron {
+        height: 350px;
+        color: white;
+        text-shadow: #444 0 1px 1px;
+        background:transparent;
+      }
+      body {
+       font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+       font-weight: 300;
+     }
+
+
+     </style>
+   </head>
+   <body>
+    <div class="bg"></div>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 style="color:#D1D1D1" face:"Helvetica"> Nicholas Dalton Smith</h1>
+        <p style="color:#D1D1D1">I love Technology and learning new things. I like knowing about the latest and greatest in all aspects of science and technology. Whether its a new internet technology or new findings from Curiosity I'm interested. This love for technology has pushed me to learn all I can about computers because through them instead of just observing these new technologies I can help create them.</p>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <center><img class="img-circle" data-src="holder.js/140x140" src="Conserodates.png" alt="Dates of employment at concero"></center>
+          <center><h2>Consero</h2></center>
+          <center>
+            <ul>
+              <li>Worked as customer service for an oil company</li>
+              <li>Got experience with talking to customers and helping them with their problems</li>
+            </ul>
+          </center>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <center><img class="img-circle" data-src="holder.js/140x140" src="PNTdates.png" alt="Generic placeholder image"></center>
+          <center><h2>PNT</h2></center>
+          <center>
+            <ul>
+              <li>Derived interesting ideas for projects</li>
+              <li>Checked the feasibility of their implementation</li>
+              <li>If feasible I would then lead in the development</li>
+            </ul>
+          </center>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <center><img class="img-circle" data-src="holder.js/140x140" src="Netlabdates.png" alt="Generic placeholder image"></center>
+          <center><h2>Netlab</h2></center>
+          <center>
+            <ul>
+              <li>Assisted in the research of new web technologies</li>
+              <li>Debug C/C++ code and making small adjustments</li>
+            </ul>
+          </center>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Nic Smith. &middot;</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+    
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type='text/javascript'>
+
+    $(document).ready(function() {
+
+      var jumboHeight = $('.jumbotron').outerHeight();
+      function parallax(){
+        var scrolled = $(window).scrollTop();
+        $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+      }
+
+      $(window).scroll(function(e){
+        parallax();
+      });
+
+    });
+
+    </script>
+  </body>
